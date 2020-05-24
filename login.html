@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+ 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   
+<!-- <div class="header">
+<div class="container"> -->
+    <div class="row">
+        <div class="col-md-12"  id="contain">
+            
+                <a href="index.html">HOME</a>
+                <a href="#" >LOGIN</a>
+
+                <a href="signup.html">SIGNUP</a>
+            
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12 header-top">
+
+    <h1 >Library</h1>
+
+        </div>
+    </div>
+    <!-- -------section left1---------->
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-2">
+                <label id="lab1"for="" onclick="alert('Please Login')">Search</label>
+                <label id="lab2"for="" onclick="alert('Please Login')">Check by Author's name</label>
+                <label id="lab2"for="" onclick="alert('Please Login')">Check by Book Name</label>
+                <label id="lab2"for="" onclick="alert('Please Login')">Check by Genre</label>
+                <label id="lab2"for="" onclick="alert('Please Login')">New Arrivals</label><br><br><br><br>
+                <label id="lab1"for="" onclick="alert('Please Login')">Resource</label><br>
+                <label id="lab2"for="" onclick="alert('Please Login')">Online Journals 2020</label><br>
+                <label id="lab2"for="" onclick="alert('Please Login')">Department periodicals list</label><br>
+                <label id="lab2"for="" onclick="alert('Please Login')">Collections</label><br>
+                <label id="lab2"for="" onclick="alert('Please Login')">Bibliographyic Gateway</label><br>
+            </div>
+            <!------section right1----- -->
+            <div class="col-md-6 center">
+                <div id="sect" >
+               
+                   
+                       <form class="login" id="regform" action="/index1.html" style="display: block;" submit= "return regsubmit();"  >                 <!-- <form id="regform" style="display: block;"  > -->
+                        <h3>Login</h3><br>
+                        <label for="name" > Full Name</label><br>
+                        <input type="text" id="name"  placeholder=" Full Name" required><br><br>
+                       <label for="admnum">Membership Number</label><br>
+                       <input type="text" placeholder="Membership Number"required><br><br>
+                       <label for="">Password</label><br>
+                       <input type="password" onkeyup="validatePassword(this.value);" id="pass" name="pass" placeholder="Password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required><br>
+                       <span id="msg"></span>  <br>
+                                            
+                       <button id="submit" round class="btn " style="margin-left: 20px;color: white; background-color:  rgba(5, 3, 85, 0.966);"  >Login</button>
+
+                        </form>
+                </div>
+
+            </div>
+                <div class="col-sm-2">
+                    <label id="lab1"for="">Flash News</label>
+                    <div class="flash"><p>Stay Home Stay Safe</p></div>
+
+                    <div class="w3-content w3-section" style="max-width:80px; max-height: 100px;  margin-top: 25px;" >
+                        <img class="mySlides" src="/image/library6.jpg" style="margin-top: 10px;margin-right: 3px;"  >
+                        <img class="mySlides" src="/image/library7.jpg" style="margin-top: 10px; margin-right: 3px;">
+                        <img class="mySlides" src="/image/library5.jpg" style="margin-top: 10px; margin-right: 3px;">
+                        <img class="mySlides" src="/image/library9.jpg" style="margin-top: 10px;margin-right: 3px;"  >
+                        <img class="mySlides" src="/image/library10.jpg" style="margin-top: 10px; margin-right: 3px;">
+                        <img class="mySlides" src="/image/library11.jpg" style="margin-top: 10px; margin-right: 3px;">
+
+                    </div>
+                </div>
+        </div>
+        <!-- <div class="row-sm-2"> -->
+            <!-- <label id="lab1"for="">Resource</label><br>
+            <label id="lab2"for="">Online Journals 2020</label><br>
+            <label id="lab2"for="">Department periodicals list</label><br>
+            <label id="lab2"for="">Collections</label><br>
+            <label id="lab2"for="">Bibliographyic Gateway</label><br>
+             -->
+        <!-- </div> -->
+        
+    </div> 
+   
+
+</section>
+
+
+<!-----------footer section-------------->
+<section style="margin-top:500px ; margin-left: 50px;">
+    <!-- <div class="footer " style="margin-top: 150px; height:150 ;"> -->
+        <div class="row">
+            <div class="col-md-12">
+                <h3> Follow Us</h3>
+            </div>
+        </div>
+        <div class="row">
+            <!-- <div class="col-md-12"> -->
+                <div class="btn-group">
+                    <button type="button" class="btn btn-primary">Twitter</button>
+                    <button type="button" class="btn " id="foot-btn">Facebook</button>
+                    <button type="button" class="btn btn-danger">Google+</button>
+                </div>
+            <!-- </div> -->
+        </div>
+    <!-- </div> -->
+</section>
+</div> -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+   
+    
+    <!---------------login form------------------>
+    
+    <script>
+    function regform(){
+        var x=document.getElementById("regform");
+ 
+        if (x.style.display === "none") {
+         x.style.display = "block";
+       } else {
+         // x.style.display = "none";
+       }
+      
+     }
+     function regsubmit(){
+        var x=document.getElementById("regform");
+        if (x.style.display === "block") {
+        x.style.display = "none";
+      }
+  
+
+      }
+    </script>
+    <!-- star-----w3 schools------ -->
+
+    <script>
+        var myIndex = 0;
+        carousel();
+        
+        function carousel() {
+          var i;
+          var x = document.getElementsByClassName("mySlides");
+          for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+          }
+          myIndex++;
+          if (myIndex > x.length) {myIndex = 1}    
+          x[myIndex-1].style.display = "block";  
+          setTimeout(carousel, 2000); // Change image every 2 seconds
+        }
+        </script>
+
+    <!-- end------w3------ -->
+    
+    <!-- ------password validatio-------->
+    <script>
+        function validatePassword(password) {
+            
+            // Do not show anything when the length of password is zero.
+            if (password.length === 0) {
+                document.getElementById("msg").innerHTML = "";
+                return;
+            }
+            // Create an array and push all possible values that you want in password
+            var matchedCase = new Array();
+            matchedCase.push("[$@$!%*#?&]"); // Special Charector
+            matchedCase.push("[A-Z]");      // Uppercase Alpabates
+            matchedCase.push("[0-9]");      // Numbers
+            matchedCase.push("[a-z]");     // Lowercase Alphabates
+
+            // Check the conditions
+            var ctr = 0;
+            for (var i = 0; i < matchedCase.length; i++) {
+                if (new RegExp(matchedCase[i]).test(password)) {
+                    ctr++;
+                   
+                }
+            }
+            // Display it
+
+            
+            var color = "";
+            var strength = "";
+            switch (ctr) {
+                case 0:
+                case 1:
+                case 2:
+                    strength = "Very Weak";
+                    color = "red";
+                    
+                    break;
+                case 3:
+                    strength = "Medium";
+                    color = "orange";
+                   
+                    break;
+                case 4:
+                    strength = "Strong";
+                    color = "green";
+                   
+                    break;
+            }
+            document.getElementById("msg").innerHTML = strength;
+            document.getElementById("msg").style.color = color;
+        }
+    </script>
+
+
+</body>
+</html>

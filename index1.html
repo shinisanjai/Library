@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="index1.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!--------------- nav bar-------------- -->
+<div class="container">
+    <div class="row">
+        <div class="col col-md-12">
+<nav>
+    <h1> Welcome To Library</h1>
+</nav>
+        </div>
+    </div>
+</div>
+<!--------------- about section------------>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-7 "></div>
+            <div class="col-md-5">
+             <div class="about-overlay">
+                <div class="about">
+                    <h2> About Library</h2>
+                    
+                    <p> A library is a curated collection of sources of information and similar resources, selected by experts and made accessible to a defined community for reference or borrowing, often in a quiet environment conducive to study.This Library was found on 1978  </p>
+                </div>
+            </div>
+             
+        </div>
+    </div>
+</div>
+<!---------------registration---------------->
+<div class="container">
+    <div class="row">
+        <div class="col col-sm-2"></div>
+        <div class="col col-md-8">
+            <!-- <input type="checkbox" class="largerCheckbox" onclick="regform();"  name="reg" value="join">
+            <label id="lab" style="color: white;"> Already a member ? LOGIN</label> -->
+             <!-------- registration form --------->
+             
+             
+            <form id="regform" style="display: none;" >
+                <h3>Login</h3><br><br>
+                <label for="name" > Full Name</label><br>
+                <input type="text" id="name"  placeholder=" Full Name" required><br><br>
+               <label for="admnum">Membership Number</label><br>
+               <input type="text" placeholder="Membership Number"required><br><br>
+               <label for="">Password</label><br>
+               <input type="password" placeholder="Password"required><br><br>
+               <button type="button" onclick="regsubmit()">Submit</button>
+               
+                </form>
+            <!-- <div id="regform"></div>
+            <input type="checkbox" class="largerCheckbox" onclick="login();" name="reg1" value="join1">
+            <label id="lab" style="color: white;"> New Registration</label> -->
+           
+            <form id="login" style="display: none;" >
+                <h4 style="margin-top: 30px;">New Registration</h4><br>
+                <label for="name"  > Full Name</label>
+                <input type="text" id="name" style="float: right;"  placeholder=" Full Name" required><br><br>
+               <label for="address" >Permanent Address</label>
+               <input type="text" placeholder="Address" style="float: right;" required><br><br>
+               <label for="pin" >PIN Code</label>
+               <input type="text" placeholder="PIN" style="float: right;" required><br><br>
+               <label for="Gen" >Genter</label>
+               <input type="radio" name="gender"value="male"> Male
+               <input type="radio" name="gender" value="female"> Female<br>
+               <label for="mobnum" >Contact Number</label>
+               <input type="ponenumber" placeholder="Phone Number" style="float: right;" required><br><br>
+
+               <label for="" >Password</label>
+               <input type="password" id="pass" placeholder="Password" style="float: right;" required><br><br>
+               <label for="" >Confirm Password</label>
+               <input type="password" id="pass1" placeholder="Repeat same password" style="float: right;"required>
+                <button type="button" id="btn" onclick="loginsubmit()">Submit</button>
+            </form>
+           
+    
+        </div>
+
+    </div>
+
+</div>
+<script>
+    
+    function regform(){
+       var x=document.getElementById("regform");
+
+       if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        // x.style.display = "none";
+      }
+     
+    }
+
+    function login(){
+       var x=document.getElementById("login");
+
+       if (x.style.display === "none") {
+        x.style.display = "block";
+      } else {
+        // x.style.display = "none";
+      }
+     
+     
+    }
+    function loginsubmit(){
+     
+        var x=document.getElementById("login");
+        
+        if (x.style.display === "block") {
+        x.style.display = "none";
+      } 
+//------- password checking------
+var x= document.getElementById("pass").value;
+    var y= document.getElementById("pass1").value;
+if (x===y)
+alert("comfirmed password");
+
+else
+alert("wrong password");
+
+
+// --------end password checking---------
+      }
+
+      function regsubmit(){
+        
+        var x=document.getElementById("regform");
+        
+        if (x.style.display === "block") {
+        x.style.display = "none";
+      }
+    
+  
+
+      }
+</script>
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
+
+
+
+
+
+    

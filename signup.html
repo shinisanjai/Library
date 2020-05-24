@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="signup.css">
+
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="header">
+        <!-- <div class="container"> -->
+            <div class="row">
+                <div class="col-md-12"  id="contain">
+                    
+                        <a href="index.html">HOME</a>
+                        <a href="#" >LOGIN</a>
+        
+                        <a href="signup.html">SIGNUP</a>
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12 header-top">
+        
+            <h1 >Library</h1>
+        
+                </div>
+            </div>
+    </div>
+            <!-- -------section left1---------->
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-sm-2">
+                        <label id="lab1"for="" onclick="alert('Please Login')">Search</label>
+                        <label id="lab2"for="" onclick="alert('Please Login')" >Check by Author's name</label>
+                        <label id="lab2"for="" onclick="alert('Please Login')">Check by Book Name</label>
+                        <label id="lab2"for="" onclick="alert('Please Login')">Check by Genre</label>
+                        <label id="lab2"for="" onclick="alert('Please Login')">New Arrivals</label><br><br><br><br><br><br>
+                        <label id="lab1"for="" onclick="alert('Please Login')">Resource</label><br>
+                        <label id="lab2"for="" onclick="alert('Please Login')">Online Journals 2020</label><br>
+                        <label id="lab2"for="" onclick="alert('Please Login')">Department periodicals list</label><br>
+                        <label id="lab2"for="" onclick="alert('Please Login')">Collections</label><br>
+                        <label id="lab2"for="" onclick="alert('Please Login')">Bibliographyic Gateway</label><br>
+                        <label id="lab2"for="" onclick="alert('Please Login')">Department periodicals list</label><br>
+
+                    </div>
+                    <!------section right1----- -->
+                    <div class="col-md-6 center">
+                        <div id="sect" >
+                       
+                            <!--start -------w3---animation -->
+        
+                           
+                                        <!--end ------w3 schools---- -->
+                                        <form class="login"  action="index1.html" onsubmit="return loginsubmit(); pinValidation(); "  style="height:530px ;"  >
+
+                                        <!-- <form class="login" id="regform" style="height:530px ;"> -->
+                                            <h4 style="margin-top: 30px;">New Registration</h4><br>
+                                            <label for="name"  > Full Name</label>
+                                            <input type="text" id="name" style="float: right;"  placeholder=" Full Name" required><br>
+                                           <label for="address" >Permanent Address</label>
+                                           <input type="text" placeholder="Address" style="float: right;" required><br>
+                                           <label for="pin" >PIN Code</label>
+                                           <input type="number" id="pin" placeholder="PIN" style="float: right;" required><br>
+                                           <label for="dob" >Date of Birth</label>
+                                           <input type="date" value="Today" max="25/05/2020" style="float: right;" required><br>
+
+                                           <label for="Gen" >Genter</label>
+                                           <input type="radio" name="gender"value="male"> Male
+                                           <input type="radio" name="gender" value="female"> Female<br>
+                                           <label for="mobnum" >Contact Number</label>
+                                           <!-- <input  type="tel" onkeyup="phonenumber(this.value)" placeholder="xxx-xxx-xxxx" style="float: right;" id="inputtxt" required pattern="/^\(?([0-9]{3})\)?[-. ]?([0-9]{3})[-. ]?([0-9]{4})$/"><br> -->
+
+                                           <input  type="tel" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" onkeyup="phonenumber(this.value)" placeholder="xxx-xxx-xxxx" style="float: right;" id="inputtxt" required ><br>
+                                           <label for="address" >Email</label>
+                                           <input type="email" placeholder="email" style="float: right;"  required><br>
+
+                                           <label for="pass" >Password</label>
+                                           <input type="password" onkeyup="validatePassword(this.value);" id="pass" name="pass" style="float: right;" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required placeholder="Password"><br>
+                                           <p id="msg"></p>  
+                                                              
+                                           <label for="pass" >Confirm Password</label>
+                                           <input type="password" onkeyup="validatePassword1(this.value);" id="pass1" name="pass" style="float: right;" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required placeholder="Reapet Password">
+                                           <p id="msg"></p>
+                                           <!-- <button type="button" id="btn" onclick="loginsubmit();">Submit</button> -->
+                                         
+                                         <button id="submit" round class="btn " style="margin-left: 30px;background-color:rgba(5, 3, 85, 0.966) ; color: white;" >SIGNUP</button>
+                                         <p id="msg1"></p>
+                                        </form>
+                                           
+                        </div>
+        
+                    </div>
+                        <div class="col-sm-4 ">
+                            <label id="lab1"for="">Flash News</label>
+                            <div class="flash"><p>Stay Home Stay Safe</p></div>
+
+                            <div class="w3-content w3-section" style="max-width:100px; max-height: 150px;  margin-top: 25px;" >
+                                <img class="mySlides" src="/image/library11.jpg" style="margin-top: 10px; margin-right: 10px;" >
+                                <img class="mySlides" src="/image/library6.jpg" style="margin-top: 10px; margin-right: 10px;">
+                                <img class="mySlides" src="/image/library7.jpg" style="margin-top: 10px;margin-right: 10px; ">
+                                <img class="mySlides" src="/image/library9.jpg" style="margin-top: 10px; margin-right: 10px;" >
+                                <img class="mySlides" src="/image/library10.jpg" style="margin-top: 10px; margin-right: 10px;">
+                                <img class="mySlides" src="/image/library5.jpg" style="margin-top: 10px;margin-right: 10px; ">
+
+                              </div>
+                        </div>
+                </div>
+               
+            </div> 
+           
+        
+        </section>
+        
+        
+        <!-----------footer section-------------->
+        <section style="margin-top:600px ; margin-left: 50px;">
+            <!-- <div class="footer " style="margin-top: 150px; height:150 ;"> -->
+                <div class="row">
+                    <div class="col-md-12">
+                        <h3> Follow Us</h3>
+                    </div>
+                </div>
+                <div class="row">
+                    <!-- <div class="col-md-12"> -->
+                        <div class="btn-group">
+                            <button type="button" class="btn btn-primary">Twitter</button>
+                            <button type="button" class="btn " id="foot-btn">Facebook</button>
+                            <button type="button" class="btn btn-danger">Google+</button>
+                        </div>
+                    <!-- </div> -->
+                </div>
+            <!-- </div> -->
+        </section>
+
+        <script>
+            var myIndex = 0;
+            carousel();
+            
+            function carousel() {
+              var i;
+              var x = document.getElementsByClassName("mySlides");
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              myIndex++;
+              if (myIndex > x.length) {myIndex = 1}    
+              x[myIndex-1].style.display = "block";  
+              setTimeout(carousel, 2000); // Change image every 2 seconds
+            }
+            </script>
+ 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+<script>
+    //-------------------------------------------
+        function validatePassword(password)
+         {
+            
+            // Do not show anything when the length of password is zero.
+            if (password.length === 0) {
+                document.getElementById("msg").innerHTML = "";
+                return;
+            }
+            // Create an array and push all possible values that you want in password
+            var matchedCase = new Array();
+            matchedCase.push("[$@$!%*#?&]"); // Special Charector
+            matchedCase.push("[A-Z]");      // Uppercase Alpabates
+            matchedCase.push("[0-9]");      // Numbers
+            matchedCase.push("[a-z]");     // Lowercase Alphabates
+
+            // Check the conditions
+            var ctr = 0;
+            for (var i = 0; i < matchedCase.length; i++) {
+                if (new RegExp(matchedCase[i]).test(password)) {
+                    ctr++;
+                   
+                }
+            }
+            // ---------------------------------------
+            // Display it
+
+            
+            var color = "";
+            var strength = "";
+            switch (ctr) {
+                case 0:
+                case 1:
+                case 2:
+                    strength = "Very Weak";
+                    color = "red";
+                    
+                    break;
+                case 3:
+                    strength = "Medium";
+                    color = "orange";
+                   
+                    break;
+                case 4:
+                    strength = "Strong";
+                    color = "green";
+                   
+                    break;
+            }
+            document.getElementById("msg").innerHTML = strength;
+            document.getElementById("msg").style.color = color;
+
+}
+// confirm password
+
+
+function validatePassword1(password)
+         {
+            
+            // Do not show anything when the length of password is zero.
+            if (password.length === 0) {
+                document.getElementById("msg").innerHTML = "";
+                return;
+            }
+            var matchedCase = new Array();
+            matchedCase.push("[$@$!%*#?&]"); 
+            matchedCase.push("[A-Z]");     
+            matchedCase.push("[0-9]");      
+            matchedCase.push("[a-z]");    
+
+            // -------Check the conditions-----
+            var ctr = 0;
+            for (var i = 0; i < matchedCase.length; i++) {
+                if (new RegExp(matchedCase[i]).test(password)) {
+                    ctr++;
+                   
+                }
+            }
+
+        }
+// ---------password checking----------
+function loginsubmit()
+{
+    var x= document.getElementById("pass").value;
+     var y= document.getElementById("pass1").value;
+     
+ if (x===y){
+ document.getElementById("msg1").innerHTML=" Password  Confirmed";
+  return true;
+ }
+ else{
+    alert("worng password");
+     document.getElementById("msg1").innerHTML=("Password is not match-->  '" + y+"'--> is worng");
+     return false;
+ }
+ x="";
+ y="";
+}
+    </script>
+
+    <!-- //---------end checking------- -->
+
+<!-- phone number validation -->
+<!-- <script>
+function phonenumber(inputtxt)
+{
+// {        alert(1)
+    var tele = document.getElementById("inputtxt").value;
+    var phoneno = /^\(?([0-9]{3})\)?[-]?([0-9]{3})[-]?([0-9]{4})$/;
+    var phonen = /^\(?([0-9]{3})\)?[.]?([0-9]{3})[.]?([0-9]{4})$/;
+    var phone = /^\(?([0-9]{3})\)?[ ]?([0-9]{3})[ ]?([0-9]{4})$/;
+        // alert(4);
+        if((tele.match(phoneno)) ||(tele.match(phonen)))
+        {
+         if((tele.match(phoneno))||(tele.match(phone)))
+            {
+                if((tele.match(phonen))||(tele.match(phone)))
+                {
+                    // alert(2);
+                    return true;
+                } }}
+        
+            else
+                {
+                    // alert(3);
+                alert("follow the formate");
+                return false;
+                }
+}
+</script> -->
+<script>
+    // ------------pin vation try& catch----------
+    
+    function pinValidation()
+    {
+            var pin=document.getElementById(pin);
+            let x=pin.value;
+        try { if (x="") throw "please enter PIN number";
+              if (x.length!=6) throw "Please enter 6 digits PIN number";
+              if (isNaN(x)) throw "PIN must be numbers";        
+        } catch(error)
+        {
+            alert(error);
+        }
+        finally {
+            pin.value="";
+        }
+    }
+</script>
+
+</body>
+</html>

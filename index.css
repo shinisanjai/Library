@@ -1,0 +1,229 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+   
+        /* overflow-y: scroll;
+        overflow-x: hidden;
+        background-image: url(/image/library.jpg);
+        background-repeat: no-repeat;
+        background-position: 50% 50%;
+        background-attachment: fixed;
+        background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        -webkit-background-size: cover;
+        */
+       
+     background-color: gainsboro; 
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.container{
+    margin: 0;
+    margin-right: 0;
+}
+#contain{
+    color: whitesmoke;
+    background-color: rgba(7, 5, 138, 0.966);
+    text-align: left;
+    margin-right: 0px;
+   
+}
+#contain a{
+    
+    padding-left: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-right: 10px;
+}
+.header-top{
+    color: white;
+    background-color: rgba(5, 3, 85, 0.966);
+    float: left;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+.header-top h1{
+    padding-left: 20px;
+}
+/* --------section left-------- */
+#lab1{
+    border: solid 2px rgba(5, 3, 85, 0.966);
+    color: white;
+    font-size: 25px;
+    width: 200px;
+    margin-top: 5px;
+    /* margin-left: 10px; */
+    background-color: rgba(5, 3, 85, 0.966);
+}
+#lab2{
+    border: solid 2px rgba(5, 3, 85, 0.966);
+    width: 200px;
+    /* margin-left: 10px; */
+
+}
+.center img {
+   position: absolute;
+  
+   left: 0px;
+   top: 0px;
+   z-index: 0.5;
+ } 
+
+#flash{
+    font-weight: bolder;
+    width: 200px;
+    height: 250px;
+    float: right;
+    /* margin-right: 20px; */
+    border: transparent;
+    /* border: solid 2px  rgba(5, 3, 85, 0.966); */
+}
+/* -------footer-------------
+.footer{
+    background-color: gainsboro;
+}
+.footer button{
+    width: 120px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+
+}
+#foot-btn{
+    color: white;
+    background-color: rgba(5, 3, 85, 0.966);
+}
+.footer h3{
+    margin-top: 420px;
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+} */
+
+        table, td {
+          border:black;
+        }
+        /* table tr{
+            border-bottom:black ;
+        }  */
+        td{
+           width: 400px;
+           color:gray;
+        }
+        
+         table img{
+            padding: 3px;
+            
+            border: 2px solid gray; 
+            border-radius: 50%;
+            margin-bottom: 20px;
+            margin-top: 10px;
+        }
+        #td2{
+            /* padding-top: 30px; */
+
+            border-bottom: 1px solid gray;
+            background-color: gainsboro;
+            color: white;
+            margin-left: 17px;
+        }
+
+    /*------- copy file css------ */
+    section .container{
+        margin-left: 50px;
+        margin-bottom: 50px;
+      
+        background:whitesmoke;
+        border:black;
+        position: absolute;
+  
+        left: 30px;
+        top: 130px;
+        z-index: 0.25px;
+        
+
+    }
+    section .container table{
+        border-collapse: collapse;
+        width: 100%;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        border-bottom:gray;
+    }
+    h5{
+        color: gray;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+   /*-------------login form-------------*/
+   form{
+   margin-left: 50px;
+    margin-top: 10px;
+    text-align: center;
+    border: solid 2px black;
+    height: 420px;
+    width: 440px;
+   background-image: url(/image/backimage1.jpg);
+   position: absolute;
+  
+   left: 0px;
+   top: 0px;
+   z-index: 0.5;
+
+}
+form input{
+    margin-right: 10px;
+}
+form h3{
+    text-align: center;
+    margin-top: 50px;
+}
+#btn{
+    margin-top: 15px;
+}
+
+
+.mySlides {display:none;}
+
+/* -------footer------------- */
+.footer{
+    background-color: gainsboro;
+    max-width: 500px;
+    max-height: 100px;
+}
+.footer button{
+    width: 120px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+
+}
+#foot-btn{
+    color: white;
+    background-color: rgba(5, 3, 85, 0.966);
+}
+.footer h3{
+    margin-top: 420px;
+    margin-left: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ /* -------Flash News animation part-------- */
+ .flash {
+    width: 300px;
+    height: 20px;
+    background: transperant;
+    color:black;
+    position: relative;
+    animation-name: mymove;
+    animation-duration: 5s;
+    animation-iteration-count: 75;
+  }
+  
+  @keyframes mymove {
+    from {left: 0px;}
+    to {left: 200px;}
+  }
+  
+  
+  
+   /* ----------end Flash News animation part---------- */
+  
